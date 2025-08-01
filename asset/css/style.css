@@ -1,0 +1,101 @@
+/* Récupération des police d'écriture */
+@font-face {
+    font-family: "Raleway", sans-serif;
+    src: url("asset/fonts/Raleway/static/Raleway-Regular.ttf");
+}
+/* Reset */
+main, header, aside, section, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+h1, h2, h3 {
+    font-family: "Lato", sans-serif;
+}
+
+h2 {
+    color: rgb(23, 171, 179);
+}
+p {
+    font-family: "Raleway", sans-serif;
+}
+hr {
+    width: 70%;
+}
+/* header */
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(23, 171, 179);
+}
+
+h1 {
+    color: white;
+}
+header p{
+    color: white;
+}
+header a {
+    text-decoration: none;
+    color: white;
+}
+header a img,header p img, footer a img {
+    border: none;
+    width: 25px;
+    height: 25px;
+    filter: invert(100%)
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% 
+
+}
+/* aside */
+aside {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.conteneur {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* section*/
+.profil {
+    text-justify: distribute-all-lines;
+}
+
+section article p:hover {
+    background-color: grey;
+    border-left: 2px solid rgb(23, 171, 179);
+}
+/* Footer */
+footer {
+    background-color: rgb(23, 171, 179);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a img:hover {
+    opacity: 60%;
+}
+
+footer small{
+    color: white;
+
+}
+
+
