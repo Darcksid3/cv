@@ -1,6 +1,6 @@
 /* Récupération des police d'écriture */
 @font-face {
-    font-family: "Raleway", sans-serif;
+    font-family: "Raleway";
     src: url("asset/fonts/Raleway-Regular.ttf");
 }
 
@@ -86,6 +86,7 @@ header a {
 header .photo img {
     width: 150px;
     height: 150px;
+    margin: 0 -100 0 -100;
     border: 5px solid #ffffff;
     border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
     filter:none;
@@ -111,7 +112,7 @@ header .photo img {
 }
 
 .info_entete {
-    flex-basis:50%;
+    flex-basis:65%;
 }
 
 /* aside */
@@ -172,6 +173,7 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 10px 0 10px;
 }
 
 .parcour div:hover {
