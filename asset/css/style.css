@@ -58,7 +58,7 @@ header {
     padding: 20px 0 20px 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -70,28 +70,16 @@ h1 {
     margin: 0;
 }
 
-.metier {
-    font-weight: 750;
-    text-align: center;
-}
-
 header p {
     color: #ffffff;
     line-height: 0px;
+    margin-left: 20px;
 }
 
 header a {
     text-decoration: none;
     color: #ffffff;
     line-height: 0px;
-}
-.photo {
-    display: inline;
-    margin: 0;
-}
-.info_entete {
-    display: inline;
-    /* vertical-align: middle; */
 }
 
 header .photo img {
@@ -101,7 +89,28 @@ header .photo img {
     border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
     filter:none;
     cursor: zoom-in;
+}
 
+.metier {
+    font-weight: 750;
+    text-align: center;
+}
+
+.photo {
+    display: inline;
+    margin: 0;
+}
+
+.cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_entete {
+    flex-basis:50%;
 }
 
 /* aside */
@@ -114,19 +123,34 @@ aside {
     justify-content: space-around;
 }
 
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+/* Style de la puce */
+ul li::before {
+    content: "\0025A0";
+    color: rgb(23, 171, 179);
+    margin-right: 5px;
+}
+
 .conteneur {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.niveau_langue {
-    text-align: right;
+
+.connaissance {
+    font-weight: 700;
 }
 
-ul {
-    padding-left: 0;
-    list-style: square;
+.stars p {
+    margin: 10px 0 14px 0;
+}
+
+.niveau_langue {
+    text-align: right;
 }
 
 /* section*/
@@ -158,7 +182,7 @@ footer a img:hover {
     opacity: 60%;
 }
 
-footer small{
+footer small {
     color: white;
 }
 
