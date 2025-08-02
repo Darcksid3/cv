@@ -5,63 +5,146 @@
         <title>CV de Bruno Rojo</title>
         <meta name="author" content="Bruno Rojo">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="asset/css/style.css">
     </head>
     <body>
         <header>
-            <img src="" alt="ma photo">
-            <h1>Bruno Rojo</h1>
-            <h2>Développeur Web et Web Mobile</h2>
-            <nav>
-                mail 
-                adresse
-                téléphone 
-                Permis B
-            </nav>
+            <div class="photo">
+                <a href="asset/images/tournesol.png" target="_blank"><img src="asset/images/tournesol.png" alt="ma photo"></a>
+            </div>
+            <div class="info_entete">
+                <h1>Bruno Rojo</h1>
+                <p class="metier">Développeur Web et Web Mobile</p>
+                <div class="cont">
+                    <div>
+                        <p><a href="mailto:mr.rojo.bruno@gmail.com" target="_blank"><img src="asset/images/envelope-solid-full.svg" alt="email mr.rojo.bruno@gmail.com">mail</a></p>                         
+                        <p><a href="tel:0607021386"><img src="asset/images/phone-solid-full.svg" alt="telephone">Téléphone</a></p>
+                    </div>
+                    <div>
+                        <p><a href="https://www.google.com/search?client=opera-gx&q=274+rue+de+la+croix+rouge+tourcoing+59200&sourceid=opera&ie=UTF-8&oe=UTF-8" target="_blank"><img src="asset/images/house-solid-full.svg" alt="adresse 274 rue de la croix rouge 59200 tourcoing">Adresse</a></p>
+                        <p><img src="asset/images/car-solid-full.svg" alt="Permis B">Permis B</p>
+                    </div>
+                </div>
+            </div>
         </header>
         <main>
-            <section>
-                <article>
-                    <h3>Profil</h3>
-                    <hr>
-                </article>
-                <article>
-                    <h3>Formations</h3>
-                    <hr>
-                </article>
-                <article>
-                    <h3>Stages</h3>
-                    <hr>
-                </article>
-                <article>
-                    <h3>Expérience professionnelle</h3>
-                    <hr>
-                </article>
-            </section>
             <aside>
-                <article>
-                    <h3>Compétences</h3>
+                <article class="competences">
+                    <h2>Compétences</h2>
                     <hr>
+                    <div class="conteneur">
+                        <div class="connaissance">
+                            <p>HTML</p><p>CSS</p><p>JavaScript</p><p>Python</p>
+                        </div>
+                        <div class="stars">
+                            <p>★★★☆☆</p><p>★★★☆☆</p><p>★★☆☆☆</p><p>★★☆☆☆</p>
+                        </div>
+                    </div>
                 </article>
-                <article>
-                    <h3>Langues</h3>
+                <article class="langues">
+                    <h2>Langues</h2>
                     <hr>
+                    <div class="conteneur">
+                        <div class="connaissance">
+                            <p>Français</p><p>Anglais</p><p>Espagnol</p>
+                        </div>
+                        <div class="niveau_langue">
+                            <p>Langue natale</p><p>Professionel</p><p>Notion</p>
+                        </div>
+                    </div>
                 </article>
-                <article>
-                    <h3>Qualités</h3>
+                <article class="bonus">
+                    <h2>Qualités</h2>
                     <hr>
+                    <ul>
+                        <li>Positif</li>
+                        <li>Assidu</li>
+                        <li>Curieux</li>
+                    </ul>
                 </article>
-                <article>
-                    <h3>Centres d'intérêt</h3>
+                <article class="bonus">
+                    <h2>Centres d'intérêt</h2>
                     <hr>
+                    <ul>
+                        <li>Musique</li>
+                        <li>Nouvelle technologie</li>
+                        <li>tennis de table</li>
+                    </ul>
                 </article>
             </aside>
+            <section>
+                <article>
+                    <h2>Profil</h2>
+                    <hr>
+                    <p class="profil">
+                        Possédant plus 20 ans d’expérience dans la vie active à de nombreux poste, j’ai développer de solide compétence.
+                        Toujours prêt à enrichir mon panel de connaissance, je reste motivé pour développer constament mon savoir et évoluer.
+                    </p>
+                </article>
+                <article>
+                    <h2>Formations</h2>
+                    <hr>
+                    <div class="parcour">
+                        <div>
+                            <p><span>Titre professionel Développeur Web et Web Mobile</span><br><small>Centre Européen de Formation</small></p>
+                            <p>2025 en cours</p>
+                        </div>
+                        <div>
+                            <p><span>Cap/Bep vente action marchande</span><br><small>CFA Commerce et Service Blagnac (31)</small></p>
+                            <p>1999-2000</p>
+                        </div>
+                        <div>
+                            <p><span>cap fleuristerie et art floral</span><br><small>CFA Commerce et Service Blagnac (31)</small></p>
+                            <p>1997-1999</p>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <h2>Stages</h2>
+                    <hr>
+                    <div class="parcour">
+                        <div>
+                            <p><span>Vendeur</span><br><small>Sarl Pap'Trinité Toulouse (31)</small></p>
+                            <p>1999-2000</p>
+                        </div>
+                        <div>
+                            <p><span>Vente et Conception</span><br><small>Sarl miamiflor Toulouse (31)</small></p>
+                            <p>1997-1999</p>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <h2>Expérience professionnelle</h2>
+                    <hr>
+                    <div class="parcour">
+                        <div>
+                            <p><span>Ouvrier Plafiste N3P2</span><br>Lys technique isolation Bailleul (59)<br><small>Réalisation de plafond suspendu, Gestion de chantier, Relation client</small></p>
+                            <p>2009-actuel</p>
+                        </div>
+                        <div>
+                            <p><span>Ouvrier de fabrications 2004</span><br><small>Seac-GF Merville (31)</small></p>
+                            <p>04-2004-12-2004</p>
+                        </div>
+                        <div>
+                            <p><span>Vendeur spécialisé en centre automobile</span><br><small>Norauto Toulouse(31)</small></p>
+                            <p>2001</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
         </main>
         <footer>
-            indeed
-            github
-            snap
-            <small>Mis à jour le <time datetime="00-00-00">00/00/0000</time></small>
+            <div>
+                <a href="https://fr.indeed.com/?from=gnav-homepage" target="_blank"><img src="asset/images/linkedin-brands-solid-full.svg" alt="logo_linkedin"></a>
+                <a href="https://github.com/Darcksid3/cv" target="_blank"><img src="asset/images/github-brands-solid-full.svg" alt="logo_github"></a>
+                <a href="https://www.snapchat.com/fr-FR" target="_blank"><img src="asset/images/instagram-brands-solid-full.svg" alt="logo_instagram"></a>
+                <a href="https://x.com/home" target="_blank"><img src="asset/images/x-twitter-brands-solid-full.svg" alt="X-txitter"></a>
+            </div>
+            <small>Mis à jour le <time datetime="02-08-2025">02/08/2025</time></small>
         </footer>
     </body>
 </html>
