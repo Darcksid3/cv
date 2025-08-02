@@ -3,47 +3,25 @@
     font-family: "Raleway", sans-serif;
     src: url("asset/fonts/Raleway/static/Raleway-Regular.ttf");
 }
-/* Reset */
-main, header, aside, section, footer {
+
+/* Reset CSS */
+body, main, header, aside, section, footer {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-main {
-    display: flex;
-    flex-direction: row;
-}
-h1, h2, h3 {
-    font-family: "Lato", sans-serif;
+/* configuration générale */
+body{
+    background-color: rgb(227, 227, 227);
 }
 
-h2 {
-    color: rgb(23, 171, 179);
-}
-p {
-    font-family: "Raleway", sans-serif;
-}
-hr {
-    width: 70%;
-}
-/* header */
-header {
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(23, 171, 179);
+header, main, footer {
+    width:  1160px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-h1 {
-    color: white;
-}
-header p{
-    color: white;
-}
-header a {
-    text-decoration: none;
-    color: white;
-}
 header a img,header p img, footer a img {
     border: none;
     width: 25px;
@@ -51,16 +29,86 @@ header a img,header p img, footer a img {
     filter: invert(100%)
 }
 
-header img {
-    width: 150px;
-    height: 150px;
-    border: 5px solid white;
-    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% 
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+h1, h2, h3 {
+    font-family: "Lato", sans-serif;
+}
+
+h2 {
+    color: rgb(23, 171, 179);
+}
+
+p {
+    font-family: "Raleway", sans-serif;
+}
+
+hr {
+    color: rgb(227, 227, 227);
+    opacity: 50%;
+}
+/* fin configuration générale */
+
+/* header */
+header {
+    background-color: rgb(23, 171, 179);
+    padding: 20px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+}
+
+.metier {
+    font-weight: 750;
+    text-align: center;
+}
+
+header p {
+    color: #ffffff;
+    line-height: 0px;
+}
+
+header a {
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 0px;
+}
+.photo {
+    display: inline;
+    margin: 0;
+}
+.info_entete {
+    display: inline;
+    /* vertical-align: middle; */
+}
+
+header .photo img {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #ffffff;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+    filter:none;
+    cursor: zoom-in;
 
 }
+
 /* aside */
 aside {
-    width: 15%;
+    background-color: rgb(245, 245, 245);
+    width: 40%;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -72,18 +120,35 @@ aside {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-/* section*/
-.profil {
-    text-justify: distribute-all-lines;
+.niveau_langue {
+    text-align: right;
 }
 
-section article p:hover {
-    background-color: grey;
+ul {
+    padding-left: 0;
+    list-style: square;
+}
+
+/* section*/
+section {
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+}
+
+.profil {
+    text-justify: distribute-all-lines;
+    text-indent: 50px;
+}
+
+.parcour p:hover {
+    background-color: rgb(227, 227, 227);
     border-left: 2px solid rgb(23, 171, 179);
 }
+
 /* Footer */
 footer {
     background-color: rgb(23, 171, 179);
+    padding: 20px 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,7 +160,6 @@ footer a img:hover {
 
 footer small{
     color: white;
-
 }
 
 

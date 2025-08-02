@@ -1,5 +1,6 @@
 /ressource
 /téléchargé
+/asset/fonts
 .DS_Store
 Thumbs.db
 debug?.log
