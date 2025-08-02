@@ -1,7 +1,7 @@
 /* Récupération des police d'écriture */
 @font-face {
     font-family: "Raleway", sans-serif;
-    src: url("asset/fonts/Raleway/static/Raleway-Regular.ttf");
+    src: url("asset/fonts/Raleway-Regular.ttf");
 }
 
 /* Reset CSS */
@@ -24,8 +24,8 @@ header, main, footer {
 
 header a img,header p img, footer a img {
     border: none;
-    width: 25px;
-    height: 25px;
+    width: 16px;
+    height: 16px;
     filter: invert(100%)
 }
 
@@ -66,6 +66,7 @@ h1 {
     color: #ffffff;
     text-align: center;
     font-size: 3rem;
+    font-weight: 600;
     padding: 0;
     margin: 0;
 }
@@ -83,8 +84,8 @@ header a {
 }
 
 header .photo img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border: 5px solid #ffffff;
     border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
     filter:none;
@@ -124,6 +125,7 @@ aside {
 }
 
 ul {
+    font-size: 1.2rem;
     padding-left: 0;
     list-style-type: none;
 }
@@ -146,6 +148,7 @@ ul li::before {
 }
 
 .stars p {
+    color: rgb(23, 171, 179);
     margin: 10px 0 14px 0;
 }
 
@@ -160,13 +163,32 @@ section {
 }
 
 .profil {
-    text-justify: distribute-all-lines;
-    text-indent: 50px;
+    text-align: left;
+    text-indent: 10%;
+    font-weight: 550;
 }
 
-.parcour p:hover {
+.parcour div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.parcour div:hover {
     background-color: rgb(227, 227, 227);
-    border-left: 2px solid rgb(23, 171, 179);
+    border-left: 5px solid rgb(23, 171, 179);
+}
+
+.parcour span {
+    font-weight: 700;
+}
+
+.parcour small {
+    font-style: italic;
+}
+
+.parcour div p:nth-child(even) {
+    color: rgb(23, 171, 179); 
 }
 
 /* Footer */
